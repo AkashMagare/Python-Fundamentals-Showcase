@@ -1,10 +1,12 @@
 # Python Fundamentals Showcase
 
-An end-to-end **Personal Expense Tracker CLI** built with Python's standard library.
+I built this small **Personal Expense Tracker CLI** while practising Python fundamentals.
 
-This project is designed for a GitHub portfolio: it solves a useful everyday problem while making core Python skills easy for a recruiter to inspect.
+It lets me record daily expenses, check where my money is going, and export the data to CSV. I kept the project simple and used only Python's standard library so I could understand how each part works instead of hiding the logic behind a framework.
 
-## What the project does
+This is one of my practice projects and a good example of how I am building my Python skills step by step.
+
+## What I built
 
 - Adds personal expenses with amount, category, description, and date
 - Saves records locally in a readable JSON file
@@ -17,7 +19,7 @@ This project is designed for a GitHub portfolio: it solves a useful everyday pro
 
 ## Quick start
 
-The project uses only Python's standard library, so there are no external packages to install.
+I intentionally used only Python's standard library, so there are no external packages to install.
 
 ```bash
 git clone https://github.com/AkashMagare/Python-Fundamentals-Showcase.git
@@ -73,7 +75,7 @@ By category:
 - Transport: INR 500.00
 ```
 
-## Python fundamentals demonstrated
+## What I practised
 
 | Concept | Where to find it | Why it is used |
 | --- | --- | --- |
@@ -93,7 +95,7 @@ By category:
 | `datetime` | `app/models.py`, `app/cli.py` | Validate dates and create timestamps |
 | Unit testing | `tests/test_expense_tracker.py` | Verify behaviour automatically |
 
-Important learning comments are placed next to the relevant code. For example, comments explain why the project uses list comprehensions, `defaultdict`, `enumerate`, `argparse`, exceptions, and `if` statements.
+I added comments next to the parts I was learning. They explain things such as list comprehensions, `defaultdict`, `enumerate`, `argparse`, exceptions, and `if` statements.
 
 ## Project structure
 
@@ -127,12 +129,12 @@ python -m compileall -q .
 
 The tests use temporary directories, so they do not modify your real expense file.
 
-## Design choices
+## Why I made these choices
 
-- **JSON instead of a database:** keeps the first version easy to understand and inspect.
-- **Standard library only:** demonstrates Python fundamentals without hiding the work behind frameworks.
-- **Separate modules:** makes the project easier to extend and shows basic application structure.
-- **Input validation:** prevents invalid amounts, empty descriptions, and malformed dates from being saved.
+- **JSON instead of a database:** I wanted the first version to be easy to open and understand.
+- **Standard library only:** this helped me focus on Python itself before learning a framework.
+- **Separate modules:** I split the code into smaller files so each part has one clear job.
+- **Input validation:** the program should catch invalid amounts, empty descriptions, and incorrect dates before saving them.
 
 ## Future improvements
 
